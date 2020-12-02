@@ -1,0 +1,33 @@
+.neutitle {
+    text-align: center;
+}
+.bloc1,.bloc2 {
+    display: inline;
+}
+.categorycontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-items: center;
+  list-style-type: none;
+}
+
+.headercategory {
+    color: red;
+}
+.headerweb {
+    font: black bold;
+}
+@media screen and (min-width: 525px) {
+    .categorycontainer {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
+  @media screen and (min-width: 700px) {
+    .categorycontainer {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
