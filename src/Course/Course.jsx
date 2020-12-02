@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { isEmpty } from "lodash";
 import PropTypes from "prop-types";
+import style from "./Course.module.css"
 
 const Course = (props) => {
     const [fetchedData, setFetchedData] = useState({});
@@ -27,14 +28,15 @@ const Course = (props) => {
       console.log(currentcourse);
       displayContent = (
         <div>
-            <h1>{currentcourse.slug}</h1> 
-            <h2>{currentcourse.Name}</h2>
-            <h3>Instructor: {currentcourse.instructor} </h3>
-            <h3>Credit: {currentcourse.credit}</h3>
-            <h3>Attributes: {currentcourse.attributes}</h3>
-            <h3>Canpus: {currentcourse.campus}</h3>
-            <h3>Average Size: {currentcourse.Avgsize}</h3>
-            <h3>Description: {currentcourse.Description}</h3>
+            <p className = {style.title}>{currentcourse.slug}-{currentcourse.Name}</p>
+            <p  className = {style.plaintext}>
+            <p >Instructor: {currentcourse.instructor} </p>
+            <p>Credit: {currentcourse.credit}</p>
+            <p>Attributes: {currentcourse.attributes}</p>
+            <p>Canpus: {currentcourse.campus}</p>
+            <p>Average Size: {currentcourse.Avgsize}</p>
+            <p>Description: {currentcourse.Description}</p>
+            </p>
 
         </div>
       );

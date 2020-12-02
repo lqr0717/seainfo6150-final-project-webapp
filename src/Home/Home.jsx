@@ -1,5 +1,6 @@
 import React from 'react'
 import neulogo from "../images/NEU logo.png";
+import style from "./Home.module.css"
 
 console.log(neulogo); 
 
@@ -7,8 +8,8 @@ const Home = () => {
    return (
        <div>
            <div>
-          <h1 > Major Introduction </h1>
-          <ul>
+          <p className = {style.title}> Major Introduction </p>
+          <ul className = {style.explain}>
               <li>
               In Northeastern’s Master of Science in Information Systems, you will embark on an IT leadership pathway as a more-evolved, dynamic software engineer. Through an innovative curriculum and a rigorous academic program that is both broad and deep, you’ll become a problem solver who designs groundbreaking software solutions that fit within the complexities of the business world and solve the humanistic needs of the people who use them.
               </li>
@@ -28,11 +29,12 @@ const Home = () => {
 
           </ul>
         </div>
+
         <div>
-          <h1> Curriculum </h1>
+        <p className = {style.title}> Curriculum</p>
         </div>
         <div>
-          <h1> Our Faculty </h1>
+        <p className = {style.title}> Our Faculty</p>
         </div>
         </div>
         

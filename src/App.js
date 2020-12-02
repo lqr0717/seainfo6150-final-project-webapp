@@ -6,7 +6,7 @@ import { isEmpty } from "lodash";
 import Home from "./Home/Home.jsx";
 
 import Error from "./Error/Error.jsx";
-import ContactUs from "./ContactUs/ContactUs.jsx";
+import ContactMe from "./ContactMe/ContactMe.jsx";
 import CourseList from "./CourseList/CourseList.jsx";
 import Course from "./Course/Course.jsx";
 import style from "./App.module.css";
@@ -37,7 +37,7 @@ console.log(neulogo);
       <header>
         <nav>
           <div className = {style.neutitle}> 
-            <Link className = {style.bloc1} to="/"> <img src = {neulogo} alt = "neu logo" width="140" height="100"/></Link>
+            <Link className = {style.bloc1} to="/"> <img src = {neulogo} alt = "neu logo" className = {style.center}/></Link>
             <p className = {style.bloc2}><h1>Northeastern University MSIS Course Introduction </h1></p>
           </div>
           <ul className = {style.categorycontainer} >
@@ -49,7 +49,7 @@ console.log(neulogo);
               <Link className= {style.headerweb} to="/displayall">Display All Courses</Link>
             </li >
             <li className= {style.headercategory}>
-              <Link  className= {style.headerweb} to="/contactus">Contact Us</Link>
+              <Link  className= {style.headerweb} to="/contactme">Contact Me</Link>
             </li>
 
           </ul>
@@ -59,7 +59,7 @@ console.log(neulogo);
             renders the first one that matches the current URL. */}
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/contactus" exact component={ContactUs} />]
+        <Route path="/contactme" exact component={ContactMe} />]
         <Route exact path="/displayall"><CourseList  courses={fetchedData} /></Route>
         <Route path = "/:slug" 
           exact strict

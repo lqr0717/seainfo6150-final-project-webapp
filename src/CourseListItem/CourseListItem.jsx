@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Switch, Route, Link } from "react-router-dom";
+import style from "./CourseListItem.module.css"
 
 
 const CourseListItem = (props) => {
@@ -9,7 +9,6 @@ const CourseListItem = (props) => {
       <div> 
 
       <course>
-          <p>{props.course.slug}</p>
           <p>{props.course.Name}</p>
           </course>
       </div>
