@@ -20,7 +20,7 @@ const CourseList = (props) => {
         </ul>
       );
   } else {
-      displayContent = <div>You have no data!</div>;
+      displayContent = <div>You have no data!!!!!!</div>;
   }
 
   return (
@@ -31,6 +31,6 @@ const CourseList = (props) => {
 };
 
 CourseList.propTypes = {
-    courses: PropTypes.array.isRequired
+    courses: PropTypes.object.isRequired
 }
 export default CourseList;

@@ -8,7 +8,7 @@ const Course = (props) => {
     useEffect(() => {
       const fetchData = async () => {
         // performs a GET request
-        const response = await fetch("http://demo7338970.mockable.io/courselist");
+        const response = await fetch("https://demo7338970.mockable.io/courselist");
         const responseJson = await response.json();
         setFetchedData(Object.values(responseJson));
       };

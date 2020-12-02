@@ -10,7 +10,7 @@ const CourseListItem = (props) => {
 
       <course>
           <p>{props.course.slug}</p>
-          <p>{props.course.shortText}</p>
+          <p>{props.course.Name}</p>
           </course>
       </div>
   );
