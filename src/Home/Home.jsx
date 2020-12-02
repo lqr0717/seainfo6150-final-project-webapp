@@ -1,13 +1,19 @@
 import React from 'react'
 import neulogo from "../images/NEU logo.png";
-import style from "./Home.module.css"
+import style from "./Home.module.css";
+import {Link} from "react-router-dom";
 
 console.log(neulogo); 
 
 const Home = () => {
    return (
        <div>
-           <div>
+         <div className ={style.container}>
+        <p className = {style.title}> Core Requirements</p> 
+        <Link  to = {"/INFO5100"}> INFO 5100: Application Engineering and Development</Link>
+        
+        </div>
+        <div className ={style.container}>
           <p className = {style.title}> Major Introduction </p>
           <ul className = {style.explain}>
               <li>
@@ -24,17 +30,15 @@ const Home = () => {
 
                   </ul>
               </li>
-              <li> You’ll also build the crucial interpersonal skills you need to succeed in any industry, taking courses on business analysis, project planning, agile development, and quality assurance.</li>
-              <li>Students with non-STEM bachelor’s degrees have the opportunity to earn a Master of Science in Information Systems in an accelerated time frame with Northeastern’s <a href = "https://coe.northeastern.edu/academics-experiential-learning/academic-departments/mgen/ms-insy/ms-insy-bridge/">Information Systems Bridge Admissions Pathway</a>.</li>
-
+             
           </ul>
         </div>
-
-        <div>
-        <p className = {style.title}> Curriculum</p>
-        </div>
-        <div>
-        <p className = {style.title}> Our Faculty</p>
+        <div className ={style.container}>
+        <p className = {style.title}> Program Credit/GPA Requirements</p>
+        <ul className = {style.explain}> 
+          <li>32 total semester hours required</li>
+          <li >Minimum 3.000 GPA required</li>
+          </ul>
         </div>
         </div>
         

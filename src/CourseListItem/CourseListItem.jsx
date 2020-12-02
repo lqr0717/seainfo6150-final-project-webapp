@@ -4,7 +4,6 @@ import style from "./CourseListItem.module.css"
 
 
 const CourseListItem = (props) => {
-    var curslug = props.course.slug;
   return (
       <div> 
 
