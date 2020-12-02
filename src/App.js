@@ -41,7 +41,6 @@ console.log(neulogo);
             <p className = {style.bloc2}><h1>Northeastern University MSIS Course Introduction </h1></p>
           </div>
           <ul className = {style.categorycontainer} >
-            {/* these links should show you how to connect up a link to a specific route */}
             <li className= {style.headercategory}>
               <Link className= {style.headerweb} to="/"> Home Page</Link>
             </li >
@@ -55,8 +54,6 @@ console.log(neulogo);
           </ul>
         </nav>
       </header>
-      {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/contactme" exact component={ContactMe} />]
