@@ -1,9 +1,10 @@
 .title {
-    color: cornflowerblue;
-    font-size: 20px;
+    color: rgb(46, 113, 236);
+    font-size: 25px;
 }
 .plaintext {
     font-size: 15px;
-    color: grey;
-    line-height: 150%;
+    color: rgb(44, 42, 42);
+    line-height: 200%;
+
 }

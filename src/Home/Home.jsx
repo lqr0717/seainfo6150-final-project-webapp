@@ -3,7 +3,7 @@ import neulogo from "../images/NEU logo.png";
 import style from "./Home.module.css";
 import {Link} from "react-router-dom";
 
-console.log(neulogo); 
+
 
 const Home = () => {
    return (
@@ -13,6 +13,18 @@ const Home = () => {
         <Link  to = {"/INFO5100"}> INFO 5100: Application Engineering and Development</Link>
         
         </div>
+        <div>
+          <form action="/action_page.php">
+            <label for="cars">Choose a car:</label>
+            <select name="cars" id="cars">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+            </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form></div>
         <div className ={style.container}>
           <p className = {style.title}> Major Introduction </p>
           <ul className = {style.explain}>

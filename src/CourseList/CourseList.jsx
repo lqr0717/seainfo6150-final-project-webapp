@@ -29,7 +29,5 @@ const CourseList = (props) => {
   );
 };
 
-CourseList.propTypes = {
-    courses: PropTypes.object.isRequired
-}
+
 export default CourseList;

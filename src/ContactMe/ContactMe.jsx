@@ -2,7 +2,7 @@ import React from 'react'
 import style from "./ContactMe.module.css"
 import cmlogo from "../images/contactme.png";
 
-console.log(cmlogo); 
+
 const ContactMe = () => {
 
     return (

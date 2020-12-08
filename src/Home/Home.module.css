@@ -3,11 +3,12 @@
 }
 .title {
     font-size: 25px;
-    color: cornflowerblue;
+    color:rgb(46, 113, 236);
 
 }
 .explain {
     font-size: 18px;
-    color: grey;
+    color: rgb(44, 42, 42);
+    line-height: 150%;
 
 }
