@@ -1,0 +1,30 @@
+.img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5%;
+}
+.categorycontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: auto;
+    justify-items: center;
+    list-style-type: none;
+  }
+  .line {
+    color: grey;
+  }
+  @media screen and (min-width: 525px) {
+    .categorycontainer {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
+  @media screen and (min-width: 700px) {
+    .categorycontainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  

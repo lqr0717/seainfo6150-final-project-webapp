@@ -5,6 +5,9 @@
 .bloc1,.bloc2 {
     display: inline;
 }
+.line {
+  color: grey;
+}
 .categorycontainer {
   display: grid;
   grid-template-columns: 1fr;
@@ -12,12 +15,11 @@
   justify-items: center;
   list-style-type: none;
 }
-.center {
+.logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width :25%;
-  height: 25%;
+  width :20%;
 
 }
 .headercategory {

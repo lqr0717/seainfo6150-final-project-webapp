@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { isEmpty } from "lodash";
-import PropTypes from "prop-types";
+import { Link, Route, Switch,Redirect } from "react-router-dom";
 import style from "./Course.module.css"
 
 const Course = (props) => {
@@ -38,8 +38,8 @@ const Course = (props) => {
       );
    } else {
       displayContent = <div>Sorry! We cannot find the details of this course!</div>;
+      
    }
-
    return (
     <div>{displayContent}</div>
   );
