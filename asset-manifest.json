@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/seainfo6150-final-project-webapp/static/css/main.545410eb.chunk.css",
-    "main.js": "/seainfo6150-final-project-webapp/static/js/main.6f27a916.chunk.js",
-    "main.js.map": "/seainfo6150-final-project-webapp/static/js/main.6f27a916.chunk.js.map",
+    "main.css": "/seainfo6150-final-project-webapp/static/css/main.dce2e1cf.chunk.css",
+    "main.js": "/seainfo6150-final-project-webapp/static/js/main.e28cbc6c.chunk.js",
+    "main.js.map": "/seainfo6150-final-project-webapp/static/js/main.e28cbc6c.chunk.js.map",
     "runtime-main.js": "/seainfo6150-final-project-webapp/static/js/runtime-main.e94e379b.js",
     "runtime-main.js.map": "/seainfo6150-final-project-webapp/static/js/runtime-main.e94e379b.js.map",
-    "static/js/2.7712586d.chunk.js": "/seainfo6150-final-project-webapp/static/js/2.7712586d.chunk.js",
-    "static/js/2.7712586d.chunk.js.map": "/seainfo6150-final-project-webapp/static/js/2.7712586d.chunk.js.map",
+    "static/js/2.6f7603ab.chunk.js": "/seainfo6150-final-project-webapp/static/js/2.6f7603ab.chunk.js",
+    "static/js/2.6f7603ab.chunk.js.map": "/seainfo6150-final-project-webapp/static/js/2.6f7603ab.chunk.js.map",
     "index.html": "/seainfo6150-final-project-webapp/index.html",
-    "static/css/main.545410eb.chunk.css.map": "/seainfo6150-final-project-webapp/static/css/main.545410eb.chunk.css.map",
-    "static/js/2.7712586d.chunk.js.LICENSE.txt": "/seainfo6150-final-project-webapp/static/js/2.7712586d.chunk.js.LICENSE.txt",
+    "static/css/main.dce2e1cf.chunk.css.map": "/seainfo6150-final-project-webapp/static/css/main.dce2e1cf.chunk.css.map",
+    "static/js/2.6f7603ab.chunk.js.LICENSE.txt": "/seainfo6150-final-project-webapp/static/js/2.6f7603ab.chunk.js.LICENSE.txt",
     "static/media/NEU logo.c058f7e0.png": "/seainfo6150-final-project-webapp/static/media/NEU logo.c058f7e0.png",
     "static/media/contactme.c11422fe.png": "/seainfo6150-final-project-webapp/static/media/contactme.c11422fe.png",
     "static/media/error.e8ecaeae.jpg": "/seainfo6150-final-project-webapp/static/media/error.e8ecaeae.jpg",
@@ -17,8 +17,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e94e379b.js",
-    "static/js/2.7712586d.chunk.js",
-    "static/css/main.545410eb.chunk.css",
-    "static/js/main.6f27a916.chunk.js"
+    "static/js/2.6f7603ab.chunk.js",
+    "static/css/main.dce2e1cf.chunk.css",
+    "static/js/main.e28cbc6c.chunk.js"
   ]
 }
