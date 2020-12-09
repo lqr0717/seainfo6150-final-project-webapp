@@ -1,10 +1,18 @@
 .title {
     color: rgb(46, 113, 236);
     font-size: 25px;
+    font-weight:bold;
 }
 .plaintext {
-    font-size: 15px;
+    font-size: 18px;
     color: rgb(44, 42, 42);
     line-height: 200%;
-
+    font-weight:bold;
+}
+.container {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 120px;
+    margin-right: 120px;
 }

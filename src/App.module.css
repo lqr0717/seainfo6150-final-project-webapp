@@ -4,6 +4,7 @@
 }
 .bloc1,.bloc2 {
     display: inline;
+    font-weight:bold;
 }
 .line {
   color: grey;

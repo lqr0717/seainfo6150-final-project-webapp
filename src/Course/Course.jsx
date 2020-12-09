@@ -22,18 +22,18 @@ const Course = (props) => {
     if(!isEmpty(fetchedData)) {
       var currentcourse = fetchedData.find(course => course.slug === props.coursedetail);
       displayContent = (
-        <div>
+        <div className ={style.container}>
           <br />
           <br />
+   
             <p className = {style.title}>{currentcourse.slug}-{currentcourse.Name}</p><br />
-            <p className = {style.plaintext}>
-            <h3>Instructor: {currentcourse.instructor} </h3>
-            <h3>Credit: {currentcourse.credit}</h3>
-            <h3>Attributes: {currentcourse.attributes}</h3>
-            <h3>Canpus: {currentcourse.campus}</h3>
-            <h3>Average Size: {currentcourse.Avgsize}</h3>
-            <h3>Description: {currentcourse.Description}</h3>
-            </p>
+        
+            <p className = {style.plaintext}>Instructor: {currentcourse.instructor} </p>
+            <p className = {style.plaintext}>Credit: {currentcourse.credit}</p>
+            <p className = {style.plaintext}>Attributes: {currentcourse.attributes}</p>
+            <p className = {style.plaintext}>Canpus: {currentcourse.campus}</p>
+            <p className = {style.plaintext}>Average Size: {currentcourse.Avgsize}</p>
+            <p className = {style.plaintext}>Description: {currentcourse.Description}</p>
             </div>
       );
    } else {

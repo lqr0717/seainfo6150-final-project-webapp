@@ -7,6 +7,7 @@ import {Link} from "react-router-dom";
 const Home = () => {
    return (
        <div>
+  
          <div className ={style.container}>
         <p className = {style.title}> Core Requirements</p> 
         <Link  to = {"/course/INFO5100"}> INFO 5100: Application Engineering and Development</Link>
@@ -14,6 +15,7 @@ const Home = () => {
         </div>
        
         <div className ={style.container}>
+    
           <p className = {style.title}> Major Introduction </p>
           <ul className = {style.explain}>
               <li>
@@ -34,13 +36,16 @@ const Home = () => {
           </ul>
         </div>
         <div className ={style.container}>
-        <p className = {style.title}> Program Credit/GPA Requirements</p>
+            <p className = {style.title}> Program Credit/GPA Requirements</p>
         <ul className = {style.explain}> 
           <li>32 total semester hours required</li>
           <li >Minimum 3.000 GPA required</li>
           </ul>
+        
         </div>
+        
         </div>
+
         
 
        
