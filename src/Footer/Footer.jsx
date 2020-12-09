@@ -9,7 +9,7 @@ const Footer = () => {
             <hr className ={style.line}></hr>
             <Link to="/"> <img src={footerlogo} alt="footer logo" className={style.img} /></Link>
             <ul className={style.categorycontainer} >
-            <li> This website is only for INFO 6105 Final Project.
+            <li> This website is only for INFO 6150 Final Project.
                 </li>
             <li> All the pirctures and information are from internet.
                 </li>

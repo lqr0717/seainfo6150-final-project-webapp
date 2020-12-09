@@ -13,7 +13,8 @@ import Course from "./Course/Course.jsx";
 import style from "./App.module.css";
 import neulogo from "./images/NEU logo.png";
 import Footer from "./Footer/Footer.jsx";
-
+import Search from "./Search/Search.jsx";
+import AboutUs from "./AboutUs/AboutUs.jsx";
 
 function App() {
   const [fetchedData, setFetchedData] = useState({});
@@ -37,7 +38,7 @@ function App() {
         <nav>
           <div className={style.neutitle}>
             <Link className={style.bloc1} to="/"> <img src={neulogo} alt="neu logo" className={style.logo} /></Link>
-            <p className={style.bloc2}><h1>Northeastern University MSIS Course Introduction </h1></p>
+            <p className={style.bloc2}>Northeastern University MSIS Course Introduction</p>
           </div>
           <hr className = {style.line}></hr>
           <ul className={style.categorycontainer} >
@@ -50,13 +51,18 @@ function App() {
             <li className={style.headercategory}>
               <Link className={style.headerweb} to="/contactme">Contact Me</Link>
             </li>
+            <li className={style.headercategory}>
+              <Link className={style.headerweb} to="/aboutus">About Us</Link>
+            </li>
+
           </ul>
         </nav>
       </header>
       <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/contactme" exact component={ContactMe} />]
-        <Route path="/courses" exact><CourseList courses={fetchedData} /></Route>
+        <Route exact path="/"  component={Home} />
+        <Route exact path="/contactme"  component={ContactMe} />
+        <Route exact path="/aboutus"  component={AboutUs} />]
+        <Route exact path="/courses" > <CourseList courses={fetchedData} /></Route>
         <Route path="/course/:slug"
           exact strict
           render={({ match }) => (<Course coursedetail={match.params.slug}/>
@@ -64,13 +70,9 @@ function App() {
         />
         <Route path="/not-found" component={Error} />
         <Route  path = "**" component={Error} />
-        
       </Switch>
       <Footer/>
     </>
   );
 };
-function CourseMatch({ match }) {
-  return <Course coursedetail={match.params.slug}/>
-}
 export default App;

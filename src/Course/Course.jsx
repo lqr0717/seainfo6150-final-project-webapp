@@ -26,14 +26,14 @@ const Course = (props) => {
           <br />
           <br />
             <p className = {style.title}>{currentcourse.slug}-{currentcourse.Name}</p><br />
-            <body className = {style.plaintext}>
-            <h3 >Instructor: {currentcourse.instructor} </h3>
+            <p className = {style.plaintext}>
+            <h3>Instructor: {currentcourse.instructor} </h3>
             <h3>Credit: {currentcourse.credit}</h3>
             <h3>Attributes: {currentcourse.attributes}</h3>
             <h3>Canpus: {currentcourse.campus}</h3>
             <h3>Average Size: {currentcourse.Avgsize}</h3>
             <h3>Description: {currentcourse.Description}</h3>
-            </body>
+            </p>
             </div>
       );
    } else {

@@ -6,6 +6,7 @@ import style from "./CourseListItem.module.css"
 const CourseListItem = (props) => {
   return (
       <div> 
+          <p>{props.course.slug}</p>
           <p>{props.course.Name}</p>
       </div>
   );

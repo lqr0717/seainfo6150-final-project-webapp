@@ -12,8 +12,11 @@ const CourseList = (props) => {
         <ul className ={style.container}>
           {props.courses.map((course) => (
             <div className = {style.subcontain}>
-                  <Link key = {course.slug} to = {"/course/" + course.slug}>{course.slug}</Link>
-                  <CourseListItem course = {course} key = {course.slug} />
+                  <Link key = {course.slug} to = {"/course/" + course.slug}>
+                    <CourseListItem key = {course.slug} course = {course} />
+
+                  </Link>
+
                   </div>
           ))}
         </ul>

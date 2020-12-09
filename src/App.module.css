@@ -32,12 +32,18 @@
     .categorycontainer {
       grid-template-columns: 1fr;
     }
+    .neutitle {
+      font-size:10 px;
+    }
   }
   
   
   @media screen and (min-width: 700px) {
     .categorycontainer {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .neutitle {
+      font-size:30 px;
     }
   }
   
