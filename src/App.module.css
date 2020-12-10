@@ -29,6 +29,11 @@
 .headerweb {
     font: black bold;
 }
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
 @media screen and (min-width: 525px) {
     .categorycontainer {
       grid-template-columns: 1fr;

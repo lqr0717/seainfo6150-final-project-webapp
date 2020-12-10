@@ -10,7 +10,7 @@ import style from "./App.module.css";
 import neulogo from "./images/NEU logo.png";
 import Footer from "./Footer/Footer.jsx";
 import AboutUs from "./AboutUs/AboutUs.jsx";
-import Attribute from "./Attribute/Attribute.jsx";
+import CourseAttribute from "./CourseAttribute/CourseAttribute.jsx";
 import Category from "./Category/Category.jsx";
 import ProForm from "./Form/Form.jsx";
 
@@ -62,10 +62,10 @@ function App() {
         <Route exact path="/aboutus"  component={AboutUs} />
         <Route exact path="/form"  component={ProForm} />
         <Route exact path="/courses" > <CourseList courses={fetchedData} /></Route>
-        <Route exact path="/GSEN-Information-Systems" > <Attribute courses={fetchedData} attr = {"GSEN Information Systems"}/></Route>
-        <Route exact path="/GSEN-Engineering" > <Attribute courses={fetchedData} attr = {"GSEN Engineering"}/></Route>
-        <Route exact path="/INFO" > <Category courses={fetchedData} attr = {"INFO"}/></Route>
-        <Route exact path="/CSYE" > <Category courses={fetchedData} attr = {"CSYE"}/></Route>
+        <Route exact path="/GSEN-Information-Systems" > <CourseAttribute courses={fetchedData} courseattr = {"GSEN Information Systems"}/></Route>
+        <Route exact path="/GSEN-Engineering" > <CourseAttribute courses={fetchedData} courseattr = {"GSEN Engineering"}/></Route>
+        <Route exact path="/INFO" > <Category courses={fetchedData} courseattr = {"INFO"}/></Route>
+        <Route exact path="/CSYE" > <Category courses={fetchedData} courseattr = {"CSYE"}/></Route>
         <Route path="/course/:slug"
           exact strict
           render={({ match }) => (<Course coursedetail={match.params.slug}/>
@@ -74,7 +74,7 @@ function App() {
         <Route exact path="/not-found" component={Error} />
         <Route  path = "**" component={Error} />
       </Switch>
-      <Footer/>
+      <Footer className = {style.footer}/>
     </>
   );
 };

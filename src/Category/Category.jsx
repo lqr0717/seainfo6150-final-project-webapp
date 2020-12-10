@@ -1,21 +1,20 @@
 import React from "react";
-import {Link, useRouteMatch,Route} from "react-router-dom";
+import {Link} from "react-router-dom";
 import style from './Category.module.css';
 import CourseListItem from "../CourseListItem/CourseListItem.jsx";
 
-function categoryfetcheddata(data,filter){
+export function categoryfetcheddata(data,filter){
   const result = [];
   for (let i = 0 ; i < data.length; i++) {
       if (data[i].category === filter) {
-        result.push(data[i])
+        result.push(data[i]);
       }
     }
     return result;
  };
- 
 const Category = (props) => {
     let displayContent;
-    const categorydata = categoryfetcheddata(props.courses, props.attr);
+    const categorydata = categoryfetcheddata(props.courses, props.courseattr);
 
     if(categorydata.length) {
       displayContent = (

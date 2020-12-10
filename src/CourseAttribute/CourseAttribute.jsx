@@ -1,10 +1,9 @@
 import React from "react";
-
-import {Link, useRouteMatch,Route} from "react-router-dom";
-import style from './Attribute.module.css';
+import {Link} from "react-router-dom";
+import style from './CourseAttribute.module.css';
 import CourseListItem from "../CourseListItem/CourseListItem.jsx";
 
-function attributefetcheddata(data,filter){
+export function attributefetcheddata(data,filter){
   const result = [];
   for (let i = 0 ; i < data.length; i++) {
       if (data[i].attributes === filter) {
@@ -13,9 +12,9 @@ function attributefetcheddata(data,filter){
     }
     return result;
  };
-const Attribute = (props) => {
+const CourseAttribute = (props) => {
     let displayContent;
-    const attributecourse = attributefetcheddata(props.courses, props.attr);
+    const attributecourse = attributefetcheddata(props.courses, props.courseattr);
 
     if(attributecourse.length) {
       displayContent = (
@@ -42,4 +41,4 @@ const Attribute = (props) => {
   };
   
 
-  export default Attribute;
+  export default CourseAttribute;

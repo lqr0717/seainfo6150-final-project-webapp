@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import style from "./Home.module.css";
 import {Link} from "react-router-dom";
 
@@ -19,7 +19,7 @@ const Home = () => {
             <th>Core Category</th>
             </tr>
             <tr>
-              <td><Link  to = {"/GSEN-Information-Systems"}> GSEN Information Systems</Link></td>
+              <td><Link  to = {"/GSEN-Information-Systems"}>GSEN Information Systems</Link></td>
               <td><Link  to = {"/INFO"}>Information System Courses</Link></td>
             </tr>
             <tr>
@@ -63,4 +63,4 @@ const Home = () => {
    )
    }
 
-export default Home
+export default Home;

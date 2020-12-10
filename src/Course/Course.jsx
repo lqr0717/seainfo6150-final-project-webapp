@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { isEmpty } from "lodash";
-import { Link, Route, Switch,Redirect } from "react-router-dom";
 import style from "./Course.module.css"
-import { LoadingMessage } from "react-select/src/components/Menu";
-
+import ProForm from "../Form/Form.jsx";
 const Course = (props) => {
     const [fetchedData, setFetchedData] = useState({});
     useEffect(() => {
@@ -28,14 +26,14 @@ const Course = (props) => {
           <br />
           <br />
             <p className = {style.title}>{currentcourse.category} {currentcourse.number} - {currentcourse.Name}</p><br />
-        
             <p className = {style.plaintext}>Instructor: {currentcourse.instructor} </p>
             <p className = {style.plaintext}>Credit: {currentcourse.credit}</p>
             <p className = {style.plaintext}>Attribute: {currentcourse.attributes}</p>
-
             <p className = {style.plaintext}>Canpus: {currentcourse.campus}</p>
             <p className = {style.plaintext}>Average Size: {currentcourse.Avgsize}</p>
             <p className = {style.plaintext}>Description: {currentcourse.Description}</p>
+
+            <ProForm className = {style.form}/>
             </div>
       );
    } else {

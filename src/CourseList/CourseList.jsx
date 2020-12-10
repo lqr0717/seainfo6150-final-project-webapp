@@ -1,12 +1,11 @@
 import React from "react";
-import PropTypes from "prop-types";
-import {Link, useRouteMatch,Route} from "react-router-dom";
+
+import {Link} from "react-router-dom";
 import style from "./CourseList.module.css";
 import CourseListItem from "../CourseListItem/CourseListItem.jsx";
 
 const CourseList = (props) => {
   let displayContent;
-  {/*let cururl = useRouteMatch();*/}
   if(props.courses.length) {
     
     displayContent = (
