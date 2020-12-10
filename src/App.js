@@ -15,7 +15,8 @@ import neulogo from "./images/NEU logo.png";
 import Footer from "./Footer/Footer.jsx";
 import Search from "./Search/Search.jsx";
 import AboutUs from "./AboutUs/AboutUs.jsx";
-
+import Attribute from "./Attribute/Attribute.jsx";
+import ProForm from "./Form/Form.jsx"
 function App() {
   const [fetchedData, setFetchedData] = useState({});
   useEffect(() => {
@@ -61,14 +62,17 @@ function App() {
       <Switch>
         <Route exact path="/"  component={Home} />
         <Route exact path="/contactme"  component={ContactMe} />
-        <Route exact path="/aboutus"  component={AboutUs} />]
+        <Route exact path="/aboutus"  component={AboutUs} />
+        <Route exact path="/form"  component={ProForm} />
         <Route exact path="/courses" > <CourseList courses={fetchedData} /></Route>
+        <Route exact path="/GSEN-Information-Systems" > <Attribute courses={fetchedData} attr = {"GSEN Information Systems"}/></Route>
+        <Route exact path="/GSEN-Engineering" > <Attribute courses={fetchedData} attr = {"GSEN Engineering"}/></Route>
         <Route path="/course/:slug"
           exact strict
           render={({ match }) => (<Course coursedetail={match.params.slug}/>
           )}
         />
-        <Route path="/not-found" component={Error} />
+        <Route exact path="/not-found" component={Error} />
         <Route  path = "**" component={Error} />
       </Switch>
       <Footer/>

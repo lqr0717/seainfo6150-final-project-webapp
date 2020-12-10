@@ -8,6 +8,7 @@ const CourseList = (props) => {
   let displayContent;
   {/*let cururl = useRouteMatch();*/}
   if(props.courses.length) {
+    
     displayContent = (
         <ul className ={style.container}>
           {props.courses.map((course) => (

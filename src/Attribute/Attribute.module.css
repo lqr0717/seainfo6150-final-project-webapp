@@ -1,0 +1,36 @@
+.container {
+    background:rgb(175, 197, 238);
+    border: 1px dashed #666;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    padding: 25px;
+  }
+.subcontain {
+    background-image: linear-gradient(to right,rgb(238, 238, 217), #eee 40%);
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.3);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+}
+@media screen and (min-width: 525px) {
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 800px) {
+    .container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 1150px) {
+    .container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }

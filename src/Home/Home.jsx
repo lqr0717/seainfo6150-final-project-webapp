@@ -11,12 +11,12 @@ const Home = () => {
          <div className ={style.container}>
         <p className = {style.title}> Core Requirements</p> 
         <Link  to = {"/course/INFO5100"}> INFO 5100: Application Engineering and Development</Link>
-        
-        </div>
-       
-        <div className ={style.container}>
-    
-          <p className = {style.title}> Major Introduction </p>
+        <p className = {style.title}> Core Attributes</p> 
+        <ul>
+          <li><Link  to = {"/GSEN-Engineering"}>GSEN Engineering</Link></li>
+          <li><Link  to = {"/GSEN-Information-Systems"}>GSEN Information Systems</Link></li>
+          </ul>
+           <p className = {style.title}> Major Introduction </p>
           <ul className = {style.explain}>
               <li>
               In Northeastern’s Master of Science in Information Systems, you will embark on an IT leadership pathway as a more-evolved, dynamic software engineer. Through an innovative curriculum and a rigorous academic program that is both broad and deep, you’ll become a problem solver who designs groundbreaking software solutions that fit within the complexities of the business world and solve the humanistic needs of the people who use them.
@@ -34,8 +34,7 @@ const Home = () => {
               </li>
              
           </ul>
-        </div>
-        <div className ={style.container}>
+
             <p className = {style.title}> Program Credit/GPA Requirements</p>
         <ul className = {style.explain}> 
           <li>32 total semester hours required</li>
@@ -51,4 +50,5 @@ const Home = () => {
        
    )
    }
+
 export default Home
