@@ -11,7 +11,8 @@ function categoryfetcheddata(data,filter){
       }
     }
     return result;
- }
+ };
+ 
 const Category = (props) => {
     let displayContent;
     const categorydata = categoryfetcheddata(props.courses, props.attr);

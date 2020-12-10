@@ -12,7 +12,7 @@ function attributefetcheddata(data,filter){
       }
     }
     return result;
- }
+ };
 const Attribute = (props) => {
     let displayContent;
     const attributecourse = attributefetcheddata(props.courses, props.attr);
