@@ -9,13 +9,25 @@ const Home = () => {
        <div>
   
          <div className ={style.container}>
-        <p className = {style.title}> Core Requirements</p> 
+        <p className = {style.title}> Core Requirements </p> 
         <Link  to = {"/course/INFO5100"}> INFO 5100: Application Engineering and Development</Link>
-        <p className = {style.title}> Core Attributes</p> 
-        <ul>
-          <li><Link  to = {"/GSEN-Engineering"}>GSEN Engineering</Link></li>
-          <li><Link  to = {"/GSEN-Information-Systems"}>GSEN Information Systems</Link></li>
-          </ul>
+        <br />
+        <br />
+        <table>
+          <tr>
+            <th>Core Attributes</th>
+            <th>Core Category</th>
+            </tr>
+            <tr>
+              <td><Link  to = {"/GSEN-Information-Systems"}> GSEN Information Systems</Link></td>
+              <td><Link  to = {"/INFO"}>Information System Courses</Link></td>
+            </tr>
+            <tr>
+              <td><Link  to = {"/GSEN-Engineering"}>GSEN Engineering</Link></td>
+              <td><Link  to = {"/CSYE"}>Computer Science Courses</Link></td>
+            </tr>
+        </table>
+        
            <p className = {style.title}> Major Introduction </p>
           <ul className = {style.explain}>
               <li>

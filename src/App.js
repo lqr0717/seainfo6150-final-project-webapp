@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, Route, Switch } from "react-router-dom";
-
 import { isEmpty } from "lodash";
-
-
 import Home from "./Home/Home.jsx";
-
 import Error from "./Error/Error.jsx";
 import ContactMe from "./ContactMe/ContactMe.jsx";
 import CourseList from "./CourseList/CourseList.jsx";
@@ -13,10 +9,11 @@ import Course from "./Course/Course.jsx";
 import style from "./App.module.css";
 import neulogo from "./images/NEU logo.png";
 import Footer from "./Footer/Footer.jsx";
-import Search from "./Search/Search.jsx";
 import AboutUs from "./AboutUs/AboutUs.jsx";
 import Attribute from "./Attribute/Attribute.jsx";
-import ProForm from "./Form/Form.jsx"
+import Category from "./Category/Category.jsx";
+import ProForm from "./Form/Form.jsx";
+
 function App() {
   const [fetchedData, setFetchedData] = useState({});
   useEffect(() => {
@@ -67,6 +64,8 @@ function App() {
         <Route exact path="/courses" > <CourseList courses={fetchedData} /></Route>
         <Route exact path="/GSEN-Information-Systems" > <Attribute courses={fetchedData} attr = {"GSEN Information Systems"}/></Route>
         <Route exact path="/GSEN-Engineering" > <Attribute courses={fetchedData} attr = {"GSEN Engineering"}/></Route>
+        <Route exact path="/INFO" > <Category courses={fetchedData} attr = {"INFO"}/></Route>
+        <Route exact path="/CSYE" > <Category courses={fetchedData} attr = {"CSYE"}/></Route>
         <Route path="/course/:slug"
           exact strict
           render={({ match }) => (<Course coursedetail={match.params.slug}/>

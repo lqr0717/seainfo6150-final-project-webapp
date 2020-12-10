@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { isEmpty } from "lodash";
 import { Link, Route, Switch,Redirect } from "react-router-dom";
 import style from "./Course.module.css"
+import { LoadingMessage } from "react-select/src/components/Menu";
 
 const Course = (props) => {
     const [fetchedData, setFetchedData] = useState({});
@@ -21,16 +22,17 @@ const Course = (props) => {
   
     if(!isEmpty(fetchedData)) {
       var currentcourse = fetchedData.find(course => course.slug === props.coursedetail);
+
       displayContent = (
         <div className ={style.container}>
           <br />
           <br />
-   
-            <p className = {style.title}>{currentcourse.slug}-{currentcourse.Name}</p><br />
+            <p className = {style.title}>{currentcourse.category} {currentcourse.number} - {currentcourse.Name}</p><br />
         
             <p className = {style.plaintext}>Instructor: {currentcourse.instructor} </p>
             <p className = {style.plaintext}>Credit: {currentcourse.credit}</p>
-            <p className = {style.plaintext}>Attributes: {currentcourse.attributes}</p>
+            <p className = {style.plaintext}>Attribute: {currentcourse.attributes}</p>
+
             <p className = {style.plaintext}>Canpus: {currentcourse.campus}</p>
             <p className = {style.plaintext}>Average Size: {currentcourse.Avgsize}</p>
             <p className = {style.plaintext}>Description: {currentcourse.Description}</p>

@@ -1,26 +1,25 @@
 import React from "react";
-
 import {Link, useRouteMatch,Route} from "react-router-dom";
-import style from './Attribute.module.css';
+import style from './Category.module.css';
 import CourseListItem from "../CourseListItem/CourseListItem.jsx";
 
-function attributefetcheddata(data,filter){
+function categoryfetcheddata(data,filter){
   const result = [];
   for (let i = 0 ; i < data.length; i++) {
-      if (data[i].attributes === filter) {
+      if (data[i].category === filter) {
         result.push(data[i])
       }
     }
     return result;
  }
-const Attribute = (props) => {
+const Category = (props) => {
     let displayContent;
-    const attributecourse = attributefetcheddata(props.courses, props.attr);
+    const categorydata = categoryfetcheddata(props.courses, props.attr);
 
-    if(attributecourse.length) {
+    if(categorydata.length) {
       displayContent = (
           <ul className ={style.container}>
-            {attributecourse.map((course) => (
+            {categorydata.map((course) => (
               <div className = {style.subcontain}>
                     <Link key = {course.slug} to = {"/course/" + course.slug}>
                       <CourseListItem key = {course.slug} course = {course} />
@@ -42,4 +41,4 @@ const Attribute = (props) => {
   };
   
 
-  export default Attribute;
+  export default Category;
