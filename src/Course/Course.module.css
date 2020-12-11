@@ -1,25 +1,26 @@
 .title {
+    font-family: Arial, Helvetica, sans-serif;
     color: rgb(46, 113, 236);
     font-size: 25px;
     font-weight:bold;
+
 }
 .plaintext {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: rgb(44, 42, 42);
     line-height: 200%;
     font-weight:bold;
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    margin-bottom: 1em;
     margin-left: 15%;
     margin-right: 15%;
 }
-.container {
-    font-family: Arial, Helvetica, sans-serif;
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    
-}
 .form {
-    display: block;
-    padding-left: 50px;
-    padding-right: 50px;
-}
+    margin: 0 auto; 
+  }

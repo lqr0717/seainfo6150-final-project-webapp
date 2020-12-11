@@ -1,4 +1,36 @@
-form {
-    margin-right: 30%;
-    margin-right: 30%;
+.form {
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0 auto; 
+    border: 5px;
+    border-color:  rgb(46, 113, 236);
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+    border-radius: 15px;
+    margin: 10px;
+
+}
+.formtitle {
+    font-weight: bold;
+    font-size: 20px;
+}
+.returncontainer {
+    border: 5px rgb(240, 207, 210) dashed;
+    border-radius: 15px;
+   
+    margin: 0 auto; 
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+.returntitle{
+    font-size: 20px;
+    color: rgb(55, 53, 136);
+}
+.returnlist {
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 150%;
 }

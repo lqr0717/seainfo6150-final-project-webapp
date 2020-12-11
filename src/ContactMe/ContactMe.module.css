@@ -1,23 +1,27 @@
 .container {
-    display: inline;
+    display: flex;
     background-color: beige;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-direction: column;
+    align-items: center;
+
+
 }
 .title {
-    font-size: 20px;
+    font-size: 25px;
+    text-align: center;
     color: cadetblue;
 }
 .email {
-    font-size: 15px;
+    font-size: 20px;
     color: cornflowerblue;
-
+    text-align:  center;
 }
-.center {
-    display: inline;
-    display: block;
-    float: left;
+.img {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     height: 50%;
-    transform: scale(0.3,0.3);
+    transform: scale(0.6,0.6);
   }

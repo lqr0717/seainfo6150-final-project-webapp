@@ -6,7 +6,8 @@ const AboutUs = () => {
     return (
         <div className = {style.container}>
             <img src={logo} alt="about us logo" className={style.img} />
-            <p>This Website is build for internal Use</p>
+            <p className = {style.text}> This Website is build for internal use.</p>
+            <p className = {style.text}>This Website is designed by Qiurui Liu.</p>
         </div>
     );
 };
